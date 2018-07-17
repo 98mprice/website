@@ -3,7 +3,7 @@ var app = express();
 var path = require('path');
 
 // Routes
-app.use("/background4.png", express.static(__dirname + "/background4.png"));
+app.use("/background.png", express.static(__dirname + "/background.png"));
 app.get('/', function(req, res) {
   res.sendfile(path.join(__dirname + '/index.html'));
 });
